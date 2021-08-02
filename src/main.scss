@@ -4,9 +4,15 @@
 *:after,
 *:before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    padding: 0;
-    margin: 0;
+.container {
+    height: 100vh;
+    background: black;
+}
+
+.content {
+    height: 75%; // 10 + 15 + 75 = 100
 }

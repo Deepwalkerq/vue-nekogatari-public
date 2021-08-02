@@ -1,5 +1,5 @@
 <template>
   <div class="content">
-    <h1>members</h1>
+    <h1>groups</h1>
   </div>
 </template>
