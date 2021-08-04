@@ -18,17 +18,21 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: 'Archivo Black', sans-serif;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // text-align: center;
+  // color: #2c3e50;
 }
 
+// Nekogatari logo
 .logo {
-  padding: 30px;
-  height: 15%;
+  height: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +40,7 @@ export default {
 
   a {
     text-decoration: none;
-    color: #ede0d4;
+    color: $primary-color;
     text-transform: uppercase;
     font-size: 6em;
 
