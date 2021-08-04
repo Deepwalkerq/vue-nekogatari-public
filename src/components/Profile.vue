@@ -25,7 +25,6 @@ img {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    background: $bg-color;
     font-size: 1.2em;
 
     ul {
@@ -42,10 +41,14 @@ img {
         margin-top: 0;
     }
 
-
         a {
             color: $primary-color;
             text-decoration: none;
+
+            &:hover {
+                color: $secondary-color;
+                transition: .2s;
+            }
         }
     }
     }

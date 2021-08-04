@@ -25,6 +25,11 @@
   color: $primary-color;
   text-decoration: none;
   margin: 0.4em;
+
+  &:hover {
+    color: $secondary-color;
+    transition: .2s;
+    }
   }
 
   a.router-link-exact-active {

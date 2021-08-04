@@ -1,5 +1,17 @@
 <template>
   <div class="content">
-    <h1>members</h1>
+    <ProfileList />
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import ProfileList from '@/components/ProfileList'
+
+export default {
+  name: 'Members',
+  components: {
+    ProfileList,
+  }
+}
+</script>
