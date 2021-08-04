@@ -6,12 +6,12 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/main.scss";
 
 #nav {
   height: 6%;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;

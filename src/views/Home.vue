@@ -1,14 +1,17 @@
 <template>
   <div class="content">
-    <h1>home</h1>
+    <Profile />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Profile from '@/components/Profile'
 
 export default {
   name: 'Home',
-  components: {}
+  components: {
+    Profile,
+  }
 }
 </script>

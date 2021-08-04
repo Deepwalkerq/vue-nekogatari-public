@@ -12,7 +12,7 @@ import NavBar from '@/components/NavBar'
 export default {
   name: 'app',
   components: {
-    NavBar
+    NavBar,
   }
 }
 </script>
@@ -43,7 +43,6 @@ export default {
     color: $primary-color;
     text-transform: uppercase;
     font-size: 6em;
-
   }
 }
 </style>
