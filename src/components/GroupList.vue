@@ -1,29 +1,36 @@
 <template>
     <div class="groups-list">
-        <table>
+        <table v-if="groups">
             <tr>
                 <th>Group name</th>
                 <th>Owner</th>
                 <th>Status</th>
                 <th></th>
             </tr>
-            <tr>
-                <td>Nekogatari</td>
-                <td>deep</td>
-                <td>Active</td>
-                <td><a href="https://steamcommunity.com/groups/Nekogatari">Join</a></td>
-            </tr>
-            <tr>
-                <td>girlbulge</td>
-                <td>fassu</td>
-                <td>Active</td>
-                <td><a href="https://steamcommunity.com/groups/girlbulge">Join</a></td>
-            </tr>
+            <GroupListItem
+            v-for="group in groups"
+            v-bind:group="group"
+            v-bind:key="group.id"
+            />
+            
+            
+            
         </table>
+        <div v-else><span>no groups at the moment</span></div>
     </div>
 </template>
+<script>
+import GroupListItem from '@/components/GroupListItem'
 
-<style lang="scss" scoped>
+export default {
+    props: ['groups'],
+    components: {
+        GroupListItem,
+    }
+}
+</script>
+
+<style lang="scss">
 @import "@/main.scss";
 
 .groups-list {
@@ -49,6 +56,7 @@ a {
 }
 
 table {
+    border-collapse: collapse;
     tr {
         th {
             padding: 15px;
