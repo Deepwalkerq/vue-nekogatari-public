@@ -1,5 +1,16 @@
 <template>
   <div class="content">
-    <h1>groups</h1>
+    <GroupList />
   </div>
 </template>
+
+<script>
+import GroupList from '@/components/GroupList'
+
+export default {
+  name: 'Groups',
+  components: {
+    GroupList,
+  }
+}
+</script>
