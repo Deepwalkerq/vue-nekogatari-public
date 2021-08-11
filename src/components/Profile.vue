@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <img src="@/assets/deep.png" alt="deep's avatar">
+        <img src="@/assets/deep.png" alt="avatar">
         <ul>
             <li><span>deep</span></li>
             <li><a href="https://steamcommunity.com/id/-6q/">steam</a></li>
