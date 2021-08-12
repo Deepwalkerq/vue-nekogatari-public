@@ -2,10 +2,8 @@
 <tr>
     <td>{{ group.title }}</td>
     <td>{{ group.owner }}</td>
-    <!-- <td class="active" v-if="group.isActive">active</td>
-    <td class="inactive" v-else>inactive</td> -->
     <td v-bind:class = "group.isActive ? 'active' : 'inactive'">{{group.isActive ? 'active' : 'inactive'}}</td>
-    <td><a :href="group.link">join</a></td>
+    <td><a :href="'https://steamcommunity.com/groups/' + group.gid">join</a></td>
 </tr>
 </template>
 

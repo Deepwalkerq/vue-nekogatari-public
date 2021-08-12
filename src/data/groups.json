@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "title": "Nekogatari",
+        "owner": "deep",
+        "isActive": true,
+        "gid": "Nekogatari"
+    },
+    {
+        "id": "2",
+        "title": "girlbulge",
+        "owner": "fassu",
+        "isActive": true,
+        "gid": "girlbulge"
+    }
+]

@@ -8,15 +8,13 @@
 
 <script>
 import GroupList from '@/components/GroupList'
+import groupsData from '@/data/groups'
 
 export default {
   name: 'Groups',
   data() {
     return {
-      groups: [
-        {id: 1, title: 'Nekogatari', owner: 'deep', isActive: true, link: 'https://steamcommunity.com/groups/Nekogatari'},
-        {id: 2, title: 'girlbulge', owner: 'fassu', isActive: true, link: 'https://steamcommunity.com/groups/girlbulge'},
-      ]
+      groups: groupsData
     }
   },
   components: {

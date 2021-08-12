@@ -1,6 +1,6 @@
 <template>
     <div class="groups-list">
-        <table v-if="groups">
+        <table id="groups-table" v-if="groups">
             <tr>
                 <th>Group name</th>
                 <th>Owner</th>
@@ -55,7 +55,7 @@ a {
     }
 }
 
-table {
+#groups-table {
     border-collapse: collapse;
     tr {
         th {
@@ -65,16 +65,11 @@ table {
                 border-bottom: none;
             }
         }
-
         td {
-            padding: 10px;
-            width: 25%;
+            padding: 5px;
+            width: 20%;
             text-align: center;
-
-            &:nth-child(3) {
-                color: green;
-            }
-        }
+        }  
     }
 }
 </style>
