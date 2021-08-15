@@ -95,7 +95,7 @@ ul {
         color: $primary-color;
 
         &:first-child {
-        font-size: 1.4em;
+        font-size: 1.8em;
         margin-top: 0;
     }
 

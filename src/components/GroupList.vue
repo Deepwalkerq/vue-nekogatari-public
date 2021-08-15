@@ -38,11 +38,17 @@ export default {
     height: 100%;
 
     display: flex;
-    align-items: center;
     flex-flow: column;
+    align-items: center;
 
     color: $primary-color;
-    font-size: 1.4em;
+    font-size: 1.1em;
+
+    @media (min-width: 576px) {
+        font-size: 1.6em;
+    }
+
+
 }
 
 a {    
@@ -59,16 +65,30 @@ a {
     border-collapse: collapse;
     tr {
         th {
-            padding: 15px;
+            padding: 5px;
             border-bottom: 1px solid $primary-color;
+            white-space: nowrap;
+
             &:last-child {
+                border-bottom: 1px solid $primary-color;
+
+                @media (min-width: 576px) {
                 border-bottom: none;
             }
+            }
+
+            @media (min-width: 576px) {
+                padding: 15px;
+            }
         }
+
         td {
-            padding: 5px;
-            width: 20%;
             text-align: center;
+            padding: 5px;
+
+            @media (min-width: 576px) {
+                width: 25%;
+            }
         }  
     }
 }

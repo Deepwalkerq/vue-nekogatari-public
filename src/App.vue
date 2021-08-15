@@ -32,14 +32,15 @@ export default {
 
 // Nekogatari logo
 .logo {
-  height: 5%;
+  height: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 
 
   @media (min-width: 992px) {
-    height: 14%;
+    height: 5%;
   }
 
 
@@ -47,7 +48,7 @@ export default {
     text-decoration: none;
     color: $primary-color;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 2.5em;
 
     @media (min-width: 576px) {
       font-size: 4em;

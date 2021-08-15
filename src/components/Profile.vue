@@ -37,7 +37,7 @@ img {
         color: $primary-color;
 
         &:first-child {
-        font-size: 1.6em;
+        font-size: 1.8em;
         margin-top: 0;
     }
 

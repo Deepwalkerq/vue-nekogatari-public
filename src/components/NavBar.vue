@@ -10,32 +10,37 @@
 @import "@/main.scss";
 
 #nav {
-  height: 5%;
+  height: 8%;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid $primary-color;
-  padding-bottom: 10px;
+  padding: 10px 0;
   flex-flow: column;
-
-  @media (min-width: 992px) {
-    width: 840px;
-    height: 6%;
-  }
 
   @media (min-width: 576px) {
     flex-flow: row;
   }
 
+  @media (min-width: 992px) {
+    width: 840px;
+    height: 5%;
+  }
+
   
   a {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: $primary-color;
   text-decoration: none;
-  margin: 0.4em;
+  margin: 0.2em;
+
+  @media (min-width: 576px) {
+    margin: 0.4em;
+
+  }
 
   &:hover {
     color: $secondary-color;
