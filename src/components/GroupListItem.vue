@@ -3,7 +3,10 @@
     <td>{{ group.title }}</td>
     <td>{{ group.owner }}</td>
     <td v-bind:class = "group.isActive ? 'active' : 'inactive'">{{group.isActive ? 'active' : 'inactive'}}</td>
-    <td><a :href="'https://steamcommunity.com/groups/' + group.gid">join</a></td>
+    <td v-if="group.isActive">
+        <a :href="'https://steamcommunity.com/groups/' + group.gid">join</a>
+    </td>
+    <td v-else><span>-</span></td>
 </tr>
 </template>
 
@@ -13,7 +16,7 @@ export default {
     props: {
         group: {
             type: Object,
-            required: true
+            // required: true
         }
     }
 }
