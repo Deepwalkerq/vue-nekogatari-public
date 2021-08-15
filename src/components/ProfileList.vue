@@ -22,10 +22,6 @@
                     <li><a href="https://steamcommunity.com/id/lxyalcony">steam</a></li>
                 </ul>
             </div>
-
-        </div>
-
-        <div class="row">
             <div class="item">
                 <img src="@/assets/visual.png" alt="avatar">
                 <ul>
@@ -54,21 +50,29 @@
 
     display: flex;
     flex-flow: column;
-
-
 }
 
 .row {
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .item {
-    width: 25%;
-    height: 95%;
+    width: 300px;
+    height: 300px;
     // background: yellow;
     text-align: center;
+
+    @media (min-width: 576px) {
+        width: 50%;
+    }
+
+    @media (min-width: 992px) {
+        width: 30%;
+    }
+
 }
 
 img {
