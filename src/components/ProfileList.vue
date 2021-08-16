@@ -9,10 +9,10 @@
                 </ul>
             </div>
             <div class="item">
-                <img src="@/assets/cappy.png" alt="avatar">
+                <img src="@/assets/valke.png" alt="avatar">
                 <ul>
-                    <li><span>cappy</span></li>
-                    <li><a href="https://steamcommunity.com/id/TransFemale">steam</a></li>
+                    <li><span>pyry</span></li>
+                    <li><a href="https://steamcommunity.com/id/mankofemboy">steam</a></li>
                 </ul>
             </div>
             <div class="item">
