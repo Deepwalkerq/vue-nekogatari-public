@@ -93,6 +93,7 @@ ul {
     li {
         margin: 5px auto;
         color: $primary-color;
+        font-size: 1.2em;
 
         &:first-child {
         font-size: 1.8em;
