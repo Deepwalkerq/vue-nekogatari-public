@@ -2,7 +2,8 @@
 <div class="container">
   <div class="logo"><router-link to="/">Nekogatari</router-link></div>
   <NavBar />
-  <router-view/>
+  <router-view
+  v-bind:player="player"/>
 </div>
 </template>
 
@@ -13,6 +14,15 @@ export default {
   name: 'app',
   components: {
     NavBar,
+  },
+  data() {
+    return {
+      player: new Audio(require('./assets/music/sound1.mp3'))
+    }
+  },
+  created() {
+    this.player.volume = "0.2"
+    this.player.loop = true
   }
 }
 </script>

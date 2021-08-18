@@ -1,6 +1,7 @@
 <template>
   <div class="content">
-    <Profile />
+    <Profile
+    v-bind:player="player" />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import Profile from '@/components/Profile'
 
 export default {
+  props: ["player"],
   name: 'Home',
   components: {
     Profile,

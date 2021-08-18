@@ -5,9 +5,25 @@
             <li><span>deep</span></li>
             <li><a href="https://steamcommunity.com/id/-6q/">steam</a></li>
         </ul>
+        <div class="player">
+            <Player
+            v-bind:player="player" />
+        </div>
+        
 
     </div>
 </template>
+
+<script>
+import Player from "@/components/Player"
+
+export default {
+    props: ["player"],
+    components: {
+        Player
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "@/main.scss";
@@ -16,6 +32,11 @@ img {
     border-radius: 50%;
     border: 2px solid $primary-color;
     margin-bottom: 20px;
+}
+
+.player {
+    color: $primary-color;
+    width: 200px;
 }
 
 .profile {
@@ -30,6 +51,7 @@ img {
     ul {
     list-style: none;
     text-align: center;
+    margin-bottom: 50px;
 
 
     li {
