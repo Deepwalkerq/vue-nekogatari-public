@@ -15,6 +15,7 @@ export default {
             this.player.play()
         },
         pause() {
+            this.player.load()
             this.player.pause()
         }
     }
@@ -38,6 +39,7 @@ button {
     background: none;
     width: 80px;
     height: 80px;
+    cursor: pointer;
 }
 
 </style>
