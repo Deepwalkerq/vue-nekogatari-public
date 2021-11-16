@@ -1,16 +1,40 @@
 [
     {
-        "id": "1",
-        "title": "Nekogatari",
-        "owner": "deep",
-        "isActive": true,
-        "gid": "Nekogatari"
+        "groupOwnerName": "deep",
+        "url": "Nekogatari"
     },
     {
-        "id": "2",
-        "title": "girlbulge",
-        "owner": "fassu",
-        "isActive": true,
-        "gid": "girlbulge"
+        "groupOwnerName": "fassu",
+        "url": "girlbulge"
+    },
+    {
+        
+        "groupOwnerName": "deep",
+        "url": "WorldHeroes"
+    },
+    {
+        "groupOwnerName": "visual",
+        "url": "hheartt"
+    },
+    {
+        "groupOwnerName": "cony",
+        "url": "silentmelody"
+    },
+    {
+        "groupOwnerName": "yuzumi",
+        "url": "-Iove"
+    },
+    {
+        "groupOwnerName": "lexi",
+        "url": "lexibest"
+    },
+    {
+        "groupOwnerName": "alina",
+        "url": "awina"
+    },
+    {
+        "groupOwnerName": "Fermion",
+        "url": "estrogengirls"
     }
+
 ]

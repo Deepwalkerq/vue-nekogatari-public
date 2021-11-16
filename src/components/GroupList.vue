@@ -1,12 +1,14 @@
 <template>
     <div class="groups-list">
         <table id="groups-table" v-if="groups">
-            <tr>
-                <th>Group name</th>
-                <th>Owner</th>
-                <th>Status</th>
-                <th></th>
-            </tr>
+
+            <th>Group name</th>
+            <th>Owner</th>
+            <th>Group tag</th>
+            <th>Members</th>
+            <th>Status</th>
+            <th></th>
+            
             <GroupListItem
             v-for="group in groups"
             v-bind:group="group"
@@ -16,7 +18,7 @@
             
             
         </table>
-        <div v-else><span>no groups at the moment</span></div>
+        <div v-else><span>No groups at the moment</span></div>
     </div>
 </template>
 <script>
@@ -63,33 +65,36 @@ a {
 
 #groups-table {
     border-collapse: collapse;
+    
     tr {
-        th {
-            padding: 5px;
-            border-bottom: 1px solid $primary-color;
-            white-space: nowrap;
-
-            &:last-child {
-                border-bottom: 1px solid $primary-color;
-
-                @media (min-width: 576px) {
-                border-bottom: none;
-            }
-            }
-
-            @media (min-width: 576px) {
-                padding: 15px;
-            }
-        }
-
+        
         td {
             text-align: center;
-            padding: 5px;
+            padding: 0;
 
             @media (min-width: 576px) {
-                width: 25%;
+                padding: 10px;
             }
         }  
     }
+
+    th {
+    padding: 5px;
+    border-bottom: 1px solid $primary-color;
+    white-space: nowrap;
+    
+    &:last-of-type {
+        border-bottom: none;
+
+        @media (min-width: 576px) {
+            border-bottom: none;
+        }
+    }
+    
+    @media (min-width: 576px) {
+                padding-bottom: 10px;
+            }
+    }
 }
+
 </style>

@@ -8,7 +8,7 @@
 
 <script>
 import GroupList from '@/components/GroupList'
-import groupsData from '@/data/groups'
+import groupsData from '@/data/updatedgroups'
 
 export default {
   name: 'Groups',
